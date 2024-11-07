@@ -1,0 +1,12 @@
+#ATM message
+import datetime
+
+def send_atm_message():
+  """Sends a text message with the current time."""
+
+  current_time = datetime.datetime.now().strftime("%d-%m-%y %H:%M:%S")
+  message = f"Your account is successfully debited with rs.5000 available balance rs.2000 at {current_time}."
+
+  print(message)
+
+send_atm_message()
